@@ -412,8 +412,8 @@
         "affectsGlobalScope": false
       },
       "../clerk/dist/model/Model.d.ts": {
-        "version": "cd6e953aadc720dbae7da2eab3dbc2f8ccdc3c88f7ce522839fbd9265d21673c",
-        "signature": "cd6e953aadc720dbae7da2eab3dbc2f8ccdc3c88f7ce522839fbd9265d21673c",
+        "version": "fafebd41a62c9992060fb792b675e3e048a5e7164cd5a4bba0ac7aff4b3cf45d",
+        "signature": "fafebd41a62c9992060fb792b675e3e048a5e7164cd5a4bba0ac7aff4b3cf45d",
         "affectsGlobalScope": false
       },
       "../clerk/dist/procedure/model/IModelProcedureResponse.d.ts": {
@@ -442,13 +442,13 @@
         "affectsGlobalScope": false
       },
       "../clerk/dist/store/Store.d.ts": {
-        "version": "4a1389a629bf4b8eed87f6a4d5ab41216a0c0e5a547aea1b50453a65246413f2",
-        "signature": "4a1389a629bf4b8eed87f6a4d5ab41216a0c0e5a547aea1b50453a65246413f2",
+        "version": "197c34a210aa0d4d68ad23e30ea952d86fd1574765ed23a58c64021b3874070e",
+        "signature": "197c34a210aa0d4d68ad23e30ea952d86fd1574765ed23a58c64021b3874070e",
         "affectsGlobalScope": false
       },
       "../clerk/dist/entity/Entity.d.ts": {
-        "version": "1f11040aba662dcc0c5ee9e42a3c6e32697388cec6b043f37731256800a7704b",
-        "signature": "1f11040aba662dcc0c5ee9e42a3c6e32697388cec6b043f37731256800a7704b",
+        "version": "659bb2037e690286dd7d0ce43dfe43b29bbd9f3af39fd1aa61155435304f1d4b",
+        "signature": "659bb2037e690286dd7d0ce43dfe43b29bbd9f3af39fd1aa61155435304f1d4b",
         "affectsGlobalScope": false
       },
       "../clerk/dist/procedure/entity/IEntityProcedureRequest.d.ts": {
@@ -544,186 +544,6 @@
       "../clerk/dist/Clerk.d.ts": {
         "version": "0a580f590cf25a11b2eb17209ff815bc5f6cc776dbea73a41b5bbeadee34faf3",
         "signature": "0a580f590cf25a11b2eb17209ff815bc5f6cc776dbea73a41b5bbeadee34faf3",
-        "affectsGlobalScope": false
-      },
-      "./node_modules/mysql2/typings/mysql/lib/protocol/sequences/Sequence.d.ts": {
-        "version": "0506328b96bdd546742da97b70a92514b1e4847b9387758f44c7e7052443f98e",
-        "signature": "0506328b96bdd546742da97b70a92514b1e4847b9387758f44c7e7052443f98e",
-        "affectsGlobalScope": false
-      },
-      "./node_modules/mysql2/typings/mysql/lib/protocol/packets/OkPacket.d.ts": {
-        "version": "5ba455ec6f0b9b40e71225a835df1c4830eabbc661c0bcdcae29b62b5dce7deb",
-        "signature": "5ba455ec6f0b9b40e71225a835df1c4830eabbc661c0bcdcae29b62b5dce7deb",
-        "affectsGlobalScope": false
-      },
-      "./node_modules/mysql2/typings/mysql/lib/protocol/packets/RowDataPacket.d.ts": {
-        "version": "4dce711bd3eb8ef017e35ff1ed0957cf748c2f504777bfa935382f376932fd3a",
-        "signature": "4dce711bd3eb8ef017e35ff1ed0957cf748c2f504777bfa935382f376932fd3a",
-        "affectsGlobalScope": false
-      },
-      "./node_modules/mysql2/typings/mysql/lib/protocol/packets/FieldPacket.d.ts": {
-        "version": "d5df920a5da67836acb16e8a4db65135351be93302fb0072d657e671e2d92220",
-        "signature": "d5df920a5da67836acb16e8a4db65135351be93302fb0072d657e671e2d92220",
-        "affectsGlobalScope": false
-      },
-      "./node_modules/mysql2/typings/mysql/lib/protocol/packets/Field.d.ts": {
-        "version": "4c749621a8903239d5d8b683a23816198135456b1d07c6bb208edc9d490e5b9e",
-        "signature": "4c749621a8903239d5d8b683a23816198135456b1d07c6bb208edc9d490e5b9e",
-        "affectsGlobalScope": false
-      },
-      "./node_modules/mysql2/typings/mysql/lib/protocol/packets/ResultSetHeader.d.ts": {
-        "version": "6160926b9a7b7157737005fd181d44d38e66614cefef9bd9e1c0ac05e58fbe54",
-        "signature": "6160926b9a7b7157737005fd181d44d38e66614cefef9bd9e1c0ac05e58fbe54",
-        "affectsGlobalScope": false
-      },
-      "./node_modules/mysql2/typings/mysql/lib/protocol/packets/index.d.ts": {
-        "version": "0a496ad0243a1a24d109ca5d318cdded7f402e7e80e56bb6bd7c9e30f32b6254",
-        "signature": "0a496ad0243a1a24d109ca5d318cdded7f402e7e80e56bb6bd7c9e30f32b6254",
-        "affectsGlobalScope": false
-      },
-      "./node_modules/mysql2/typings/mysql/lib/protocol/sequences/Query.d.ts": {
-        "version": "a9ea7b461ac39461b7ac8f2aa326ea1375b03fda1f2db8749dc507e0c291ad7c",
-        "signature": "a9ea7b461ac39461b7ac8f2aa326ea1375b03fda1f2db8749dc507e0c291ad7c",
-        "affectsGlobalScope": false
-      },
-      "./node_modules/mysql2/typings/mysql/lib/Connection.d.ts": {
-        "version": "0fdf7d31f6023debd6c0c53c822ac9b9e2ae98f2dcd9a1c26d89964ea99d65e4",
-        "signature": "0fdf7d31f6023debd6c0c53c822ac9b9e2ae98f2dcd9a1c26d89964ea99d65e4",
-        "affectsGlobalScope": false
-      },
-      "./node_modules/mysql2/typings/mysql/lib/PoolConnection.d.ts": {
-        "version": "617a866591d14eafd5f4d4d02b5e144d58fec2ea863a8399736e6769273c616d",
-        "signature": "617a866591d14eafd5f4d4d02b5e144d58fec2ea863a8399736e6769273c616d",
-        "affectsGlobalScope": false
-      },
-      "./node_modules/mysql2/typings/mysql/lib/Pool.d.ts": {
-        "version": "870c0af6962c426fd9418ba3134b95a55d8ab72f46fbd97447e831d65b14586f",
-        "signature": "870c0af6962c426fd9418ba3134b95a55d8ab72f46fbd97447e831d65b14586f",
-        "affectsGlobalScope": false
-      },
-      "./node_modules/mysql2/typings/mysql/lib/PoolCluster.d.ts": {
-        "version": "411f5ee863896acd5ce198869f8394c7dc541bbf363cde2d4f4124471b1ca6dd",
-        "signature": "411f5ee863896acd5ce198869f8394c7dc541bbf363cde2d4f4124471b1ca6dd",
-        "affectsGlobalScope": false
-      },
-      "./node_modules/mysql2/typings/mysql/index.d.ts": {
-        "version": "61f03616b31fd67e19be9872092238ed2b443b0e1a5bda7c61be52c34ec68e89",
-        "signature": "61f03616b31fd67e19be9872092238ed2b443b0e1a5bda7c61be52c34ec68e89",
-        "affectsGlobalScope": false
-      },
-      "./node_modules/mysql2/index.d.ts": {
-        "version": "9e509157d11e7843e0c7b59ea3351ce2071940776fe54d621848c87f97f17b72",
-        "signature": "9e509157d11e7843e0c7b59ea3351ce2071940776fe54d621848c87f97f17b72",
-        "affectsGlobalScope": false
-      },
-      "./node_modules/mysql2/promise.d.ts": {
-        "version": "0b15545be7aacfbbf364443eeec8508c9565771149ed6ca5edef17fdbc62d740",
-        "signature": "0b15545be7aacfbbf364443eeec8508c9565771149ed6ca5edef17fdbc62d740",
-        "affectsGlobalScope": false
-      },
-      "./src/connection/MysqlConnectionInfo.ts": {
-        "version": "22e9fb719c8f27eab5974c782c0d4e7600a1d3c54c08992415ea71be899c7d50",
-        "signature": "07a990a1e4cc4f48811f08620edb312415ff3bf0b4bc167576aaa70542be0068",
-        "affectsGlobalScope": false
-      },
-      "./src/transaction/MysqlArchiveTransaction.ts": {
-        "version": "140681eec2994d4e5d6bdf4f00654b5031ae3be02d18067405e2d96ad4d2493c",
-        "signature": "5066af19846002e4092959fe4abe81b673c847a3946b02fde06f18ce890bfff0",
-        "affectsGlobalScope": false
-      },
-      "./src/query/FilterParser.ts": {
-        "version": "118e55f5ab2b74eca03ecdedaa975ba50a987f5dcb37be15ef854c4955dd4192",
-        "signature": "055a7b18c981fc2d9e0c6a1f69b254524bccab6276e728f1dee1b19eda3648f5",
-        "affectsGlobalScope": false
-      },
-      "./src/query/QueryParser.ts": {
-        "version": "cbc8a3022f59e28e203a7ef58090cbc197c93b955d7f2a3bfb03acf0ed03027f",
-        "signature": "89b4f387a93a0bea0e507cf2ad493e57e27d41e302282efeeeabf5e9a551fee9",
-        "affectsGlobalScope": false
-      },
-      "./src/MysqlArchive.ts": {
-        "version": "6943506636a5746466c295c761f8005a38f6eabb79192d00fed39dd6a4b7f8ac",
-        "signature": "22ca94d1bce68d79e9dc5fbdde736fdb7a0a006f8c071d905c20780de533c35e",
-        "affectsGlobalScope": false
-      },
-      "./src/procedure/model/CreateProcedure.ts": {
-        "version": "f2d4f7bc6e6be6e1c6be6c8b765bbefcaeac829db381224a225c5d3d02464f47",
-        "signature": "a61f4dcef6cd57726e7ffa06f09f646a11439859a6bc4d4bc25ca848a30db42e",
-        "affectsGlobalScope": false
-      },
-      "./src/procedure/model/DeleteProcedure.ts": {
-        "version": "cf6dd3c4ff3bdbeb3c1da9121aa46268b55dfbd0be1417c60c76adc4c907b7f2",
-        "signature": "a837d50c6bc1d0f06e78648b5c8aefc94a8ef905e0f1a54e6cd90b10c11fbf00",
-        "affectsGlobalScope": false
-      },
-      "./src/procedure/model/UpdateProcedure.ts": {
-        "version": "7a48a22aeda29ec2e7a47f2267820150e8c119e768a4d6dbeb126b4f98fca31d",
-        "signature": "2e7af3e18ab719d9bf6558efa5f4079157e19166af1bedbc560125e43ad91502",
-        "affectsGlobalScope": false
-      },
-      "./src/procedure/entity/BatchUpdate.ts": {
-        "version": "f7edcf34dad189f58c1a4b009d29d3c1ff1ac4c1cf28e19a6a6ffe340fc13d65",
-        "signature": "9e0e064867c6668e9367b0fab7ce349cd6397e9e434c1e297c044a2863c5bdba",
-        "affectsGlobalScope": false
-      },
-      "./src/index.ts": {
-        "version": "c716a22e9a37b6978e8881c2a7e906264657f377061eb42fa54bf301c9cfdb47",
-        "signature": "e88f49d684041db96aa459ab6a0eb730983d09ac0b938a144eb6ebe6f05a5ad9",
-        "affectsGlobalScope": false
-      },
-      "./src/procedure/entity/Synchronize.ts": {
-        "version": "3dd38125a3da4a7459c72d8f4f44722bfa4ae2ad26c83a8601846649431c5c17",
-        "signature": "41625813860121ecc3a345df4ab773024da403ef257c3dd83f33c8b1469f3e3a",
-        "affectsGlobalScope": false
-      },
-      "./src/reflect/CheckConstraints.ts": {
-        "version": "712f7c60e0f9102463589a291890f56cab5a9d1ea86ec1048f933d289a6b0154",
-        "signature": "b8f0906fdd2c395db708cc3b703f7638f1e249e22ddca371f0768fd68c64b5e0",
-        "affectsGlobalScope": false
-      },
-      "./src/reflect/ColumnReflection.ts": {
-        "version": "fc5a8cc9bfd7e7b40ba6f72baa5983060633d09ddf2e472235d12fcb539ea982",
-        "signature": "b88b41c5314973a23def91f07774b8d4e3163d51dde24f986a2b5779260d52bf",
-        "affectsGlobalScope": false
-      },
-      "./src/reflect/TableReflection.spec.ts": {
-        "version": "f161e019defa1bc5f5dc5f5ce8edf4d53780f0e2e6064a29406b9c9c7dc20162",
-        "signature": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
-        "affectsGlobalScope": true
-      },
-      "./src/reflect/TableReflection.ts": {
-        "version": "e0b6d0b0edee04b7f89a3242ed732157657adca22f380f775beb37066e513c5c",
-        "signature": "13a15bbe1baaafd2734880f7381d34c2596d17d169e52844155f61bc7e9f9ae6",
-        "affectsGlobalScope": false
-      },
-      "./node_modules/@babel/types/lib/index-ts3.7.d.ts": {
-        "version": "e77c996592700733c33bd5e342896226ab32898c085b86dc8512128a9cd114e8",
-        "signature": "e77c996592700733c33bd5e342896226ab32898c085b86dc8512128a9cd114e8",
-        "affectsGlobalScope": false
-      },
-      "./node_modules/@types/babel__generator/index.d.ts": {
-        "version": "b25c5f2970d06c729f464c0aeaa64b1a5b5f1355aa93554bb5f9c199b8624b1e",
-        "signature": "b25c5f2970d06c729f464c0aeaa64b1a5b5f1355aa93554bb5f9c199b8624b1e",
-        "affectsGlobalScope": false
-      },
-      "./node_modules/@types/babel__traverse/index.d.ts": {
-        "version": "5d90a58a1bd934430ebffce5844631ff7e77085d6f242d975f7b5e5fc4de6ce0",
-        "signature": "5d90a58a1bd934430ebffce5844631ff7e77085d6f242d975f7b5e5fc4de6ce0",
-        "affectsGlobalScope": false
-      },
-      "./node_modules/@babel/parser/typings/babel-parser.d.ts": {
-        "version": "b1401d1d9117a5e4d981c965e3408dcb6e2b63022b716816e6d83599ab369a53",
-        "signature": "b1401d1d9117a5e4d981c965e3408dcb6e2b63022b716816e6d83599ab369a53",
-        "affectsGlobalScope": false
-      },
-      "./node_modules/@types/babel__template/index.d.ts": {
-        "version": "3051751533eee92572241b3cef28333212401408c4e7aa21718714b793c0f4ed",
-        "signature": "3051751533eee92572241b3cef28333212401408c4e7aa21718714b793c0f4ed",
-        "affectsGlobalScope": false
-      },
-      "./node_modules/@types/babel__core/index.d.ts": {
-        "version": "a66e700ed470a0cb52d14f3376c1605c70fec8e9659e45f7e22ad07fcd06ae04",
-        "signature": "a66e700ed470a0cb52d14f3376c1605c70fec8e9659e45f7e22ad07fcd06ae04",
         "affectsGlobalScope": false
       },
       "./node_modules/@types/node/globals.d.ts": {
@@ -959,6 +779,121 @@
       "./node_modules/@types/node/index.d.ts": {
         "version": "5825520e2099309182c6e2a2b3061b060d42a098c58f67d1754880a7e2cce99a",
         "signature": "5825520e2099309182c6e2a2b3061b060d42a098c58f67d1754880a7e2cce99a",
+        "affectsGlobalScope": false
+      },
+      "./node_modules/@types/sqlite3/index.d.ts": {
+        "version": "502cca269275c29bf4b7cf2175ed724d07fda07132a38095f5a89726661a8265",
+        "signature": "502cca269275c29bf4b7cf2175ed724d07fda07132a38095f5a89726661a8265",
+        "affectsGlobalScope": false
+      },
+      "./src/transaction/SQLiteArchiveTransaction.ts": {
+        "version": "a116501a25ab22e93690d8b1ea7383183c7938d85c89ad63d20df896c1708b3b",
+        "signature": "8c2adc37ca7dde6489483a52201555b8e5bb235acbe46facffc10643c21d1af1",
+        "affectsGlobalScope": false
+      },
+      "./src/query/FilterParser.ts": {
+        "version": "4b74f25730c6d2b3b0861f397efd12f7100af3bc169c25a6a0a196de459d013a",
+        "signature": "055a7b18c981fc2d9e0c6a1f69b254524bccab6276e728f1dee1b19eda3648f5",
+        "affectsGlobalScope": false
+      },
+      "./src/query/QueryParser.ts": {
+        "version": "0f622b9707047f5f3cd70865645993e0e5dc3ea6c1d168f3e108a0f126c86ad6",
+        "signature": "89b4f387a93a0bea0e507cf2ad493e57e27d41e302282efeeeabf5e9a551fee9",
+        "affectsGlobalScope": false
+      },
+      "./src/SQLiteArchive.ts": {
+        "version": "13236841ff8cd2b2260e35b81b706cec5b288bb213549c3ad5cbab0cbc797080",
+        "signature": "0b66c108fbc02a974fa183f30f5f29347004f631346971ffe2f8beebc327910e",
+        "affectsGlobalScope": false
+      },
+      "./src/procedure/model/CreateProcedure.ts": {
+        "version": "395249a82b789499a03ff78aeafae8349950086b9d5553e503b410209c1296c2",
+        "signature": "a61f4dcef6cd57726e7ffa06f09f646a11439859a6bc4d4bc25ca848a30db42e",
+        "affectsGlobalScope": false
+      },
+      "./src/procedure/model/DeleteProcedure.ts": {
+        "version": "ab9f89665a07a0abef0ce779b184687fd2535d3e3af34f32c9fac784bb6318cc",
+        "signature": "a837d50c6bc1d0f06e78648b5c8aefc94a8ef905e0f1a54e6cd90b10c11fbf00",
+        "affectsGlobalScope": false
+      },
+      "./src/procedure/model/UpdateProcedure.ts": {
+        "version": "324bef2c2c655cedbcdfa765accd61874d2370fe788b2d5a02867400839038ee",
+        "signature": "2e7af3e18ab719d9bf6558efa5f4079157e19166af1bedbc560125e43ad91502",
+        "affectsGlobalScope": false
+      },
+      "./src/procedure/entity/BatchUpdate.ts": {
+        "version": "2264a7cb2d84ab0112572670c1a44e0a8a892c1a0f28ee3a49be8460ea842e11",
+        "signature": "e58eeb9c665dd44b7958007031a5af194c3e0b6ae00ceaedb04a4fbdf4d2f3d7",
+        "affectsGlobalScope": false
+      },
+      "./src/procedure/entity/CreateEntity.ts": {
+        "version": "470fd7c8d0cd93157e566162081b3bfb98c9561c2da4f7cae4a64b3f9ee49fbb",
+        "signature": "3db1676535125b1591c5409fcdc70eb1d3cc69347f36fe5e309eb4c45a3c28e9",
+        "affectsGlobalScope": false
+      },
+      "./src/procedure/entity/CreateForeignRelation.ts": {
+        "version": "aad5ee25b595b8a98c44dbed6952d48fe7d3d0b1caddee8b1476fdbf99ea6c2f",
+        "signature": "695a9599b59d3a58b61fa4a1c9acbc5cea0026a2d141c196eb98bb1722819a70",
+        "affectsGlobalScope": false
+      },
+      "./src/index.ts": {
+        "version": "6180bafe338ea749ec9f9b5907fa1466747374bb89f5dc6279750118e89baa6a",
+        "signature": "8cef931e12fbdfff667dc3dd97fd7b1d2a9b03f0f7a572d9074c657279bd293b",
+        "affectsGlobalScope": false
+      },
+      "./src/procedure/entity/Synchronize.ts": {
+        "version": "3dd38125a3da4a7459c72d8f4f44722bfa4ae2ad26c83a8601846649431c5c17",
+        "signature": "41625813860121ecc3a345df4ab773024da403ef257c3dd83f33c8b1469f3e3a",
+        "affectsGlobalScope": false
+      },
+      "./src/reflect/CheckConstraints.ts": {
+        "version": "712f7c60e0f9102463589a291890f56cab5a9d1ea86ec1048f933d289a6b0154",
+        "signature": "b8f0906fdd2c395db708cc3b703f7638f1e249e22ddca371f0768fd68c64b5e0",
+        "affectsGlobalScope": false
+      },
+      "./src/reflect/ColumnReflection.ts": {
+        "version": "fc5a8cc9bfd7e7b40ba6f72baa5983060633d09ddf2e472235d12fcb539ea982",
+        "signature": "b88b41c5314973a23def91f07774b8d4e3163d51dde24f986a2b5779260d52bf",
+        "affectsGlobalScope": false
+      },
+      "./src/reflect/TableReflection.spec.ts": {
+        "version": "f161e019defa1bc5f5dc5f5ce8edf4d53780f0e2e6064a29406b9c9c7dc20162",
+        "signature": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "affectsGlobalScope": true
+      },
+      "./src/reflect/TableReflection.ts": {
+        "version": "9a68bc7b882e700adb647408e5c2242a73ae06abf5905ec6c338491ebc3f60ac",
+        "signature": "801b59da24cdbaa5094df2b7386d6abb75171949446f0ad3b0550e12cb88202c",
+        "affectsGlobalScope": false
+      },
+      "./node_modules/@babel/types/lib/index-ts3.7.d.ts": {
+        "version": "e77c996592700733c33bd5e342896226ab32898c085b86dc8512128a9cd114e8",
+        "signature": "e77c996592700733c33bd5e342896226ab32898c085b86dc8512128a9cd114e8",
+        "affectsGlobalScope": false
+      },
+      "./node_modules/@types/babel__generator/index.d.ts": {
+        "version": "b25c5f2970d06c729f464c0aeaa64b1a5b5f1355aa93554bb5f9c199b8624b1e",
+        "signature": "b25c5f2970d06c729f464c0aeaa64b1a5b5f1355aa93554bb5f9c199b8624b1e",
+        "affectsGlobalScope": false
+      },
+      "./node_modules/@types/babel__traverse/index.d.ts": {
+        "version": "5d90a58a1bd934430ebffce5844631ff7e77085d6f242d975f7b5e5fc4de6ce0",
+        "signature": "5d90a58a1bd934430ebffce5844631ff7e77085d6f242d975f7b5e5fc4de6ce0",
+        "affectsGlobalScope": false
+      },
+      "./node_modules/@babel/parser/typings/babel-parser.d.ts": {
+        "version": "b1401d1d9117a5e4d981c965e3408dcb6e2b63022b716816e6d83599ab369a53",
+        "signature": "b1401d1d9117a5e4d981c965e3408dcb6e2b63022b716816e6d83599ab369a53",
+        "affectsGlobalScope": false
+      },
+      "./node_modules/@types/babel__template/index.d.ts": {
+        "version": "3051751533eee92572241b3cef28333212401408c4e7aa21718714b793c0f4ed",
+        "signature": "3051751533eee92572241b3cef28333212401408c4e7aa21718714b793c0f4ed",
+        "affectsGlobalScope": false
+      },
+      "./node_modules/@types/babel__core/index.d.ts": {
+        "version": "a66e700ed470a0cb52d14f3376c1605c70fec8e9659e45f7e22ad07fcd06ae04",
+        "signature": "a66e700ed470a0cb52d14f3376c1605c70fec8e9659e45f7e22ad07fcd06ae04",
         "affectsGlobalScope": false
       },
       "./node_modules/@types/graceful-fs/index.d.ts": {
@@ -1269,6 +1204,10 @@
       "./node_modules/@types/node/zlib.d.ts": [
         "./node_modules/@types/node/stream.d.ts"
       ],
+      "./node_modules/@types/sqlite3/index.d.ts": [
+        "./node_modules/@types/node/events.d.ts",
+        "./node_modules/@types/node/index.d.ts"
+      ],
       "./node_modules/@types/yargs/index.d.ts": [
         "./node_modules/@types/yargs-parser/index.d.ts"
       ],
@@ -1286,88 +1225,42 @@
         "./node_modules/jest-diff/build/cleanupSemantic.d.ts",
         "./node_modules/jest-diff/build/types.d.ts"
       ],
-      "./node_modules/mysql2/index.d.ts": [
-        "./node_modules/mysql2/promise.d.ts",
-        "./node_modules/mysql2/typings/mysql/index.d.ts"
-      ],
-      "./node_modules/mysql2/promise.d.ts": [
-        "./node_modules/@types/node/events.d.ts",
-        "./node_modules/mysql2/index.d.ts"
-      ],
-      "./node_modules/mysql2/typings/mysql/index.d.ts": [
-        "./node_modules/mysql2/typings/mysql/lib/Connection.d.ts",
-        "./node_modules/mysql2/typings/mysql/lib/Pool.d.ts",
-        "./node_modules/mysql2/typings/mysql/lib/PoolCluster.d.ts",
-        "./node_modules/mysql2/typings/mysql/lib/PoolConnection.d.ts",
-        "./node_modules/mysql2/typings/mysql/lib/protocol/packets/index.d.ts",
-        "./node_modules/mysql2/typings/mysql/lib/protocol/sequences/Query.d.ts"
-      ],
-      "./node_modules/mysql2/typings/mysql/lib/Connection.d.ts": [
-        "./node_modules/@types/node/events.d.ts",
-        "./node_modules/mysql2/typings/mysql/lib/protocol/packets/index.d.ts",
-        "./node_modules/mysql2/typings/mysql/lib/protocol/sequences/Query.d.ts"
-      ],
-      "./node_modules/mysql2/typings/mysql/lib/Pool.d.ts": [
-        "./node_modules/@types/node/events.d.ts",
-        "./node_modules/mysql2/typings/mysql/lib/Connection.d.ts",
-        "./node_modules/mysql2/typings/mysql/lib/PoolConnection.d.ts",
-        "./node_modules/mysql2/typings/mysql/lib/protocol/packets/index.d.ts",
-        "./node_modules/mysql2/typings/mysql/lib/protocol/sequences/Query.d.ts"
-      ],
-      "./node_modules/mysql2/typings/mysql/lib/PoolCluster.d.ts": [
-        "./node_modules/@types/node/events.d.ts",
-        "./node_modules/mysql2/typings/mysql/lib/Connection.d.ts",
-        "./node_modules/mysql2/typings/mysql/lib/PoolConnection.d.ts"
-      ],
-      "./node_modules/mysql2/typings/mysql/lib/PoolConnection.d.ts": [
-        "./node_modules/mysql2/typings/mysql/lib/Connection.d.ts"
-      ],
-      "./node_modules/mysql2/typings/mysql/lib/protocol/packets/index.d.ts": [
-        "./node_modules/mysql2/typings/mysql/lib/protocol/packets/Field.d.ts",
-        "./node_modules/mysql2/typings/mysql/lib/protocol/packets/FieldPacket.d.ts",
-        "./node_modules/mysql2/typings/mysql/lib/protocol/packets/OkPacket.d.ts",
-        "./node_modules/mysql2/typings/mysql/lib/protocol/packets/ResultSetHeader.d.ts",
-        "./node_modules/mysql2/typings/mysql/lib/protocol/packets/RowDataPacket.d.ts"
-      ],
-      "./node_modules/mysql2/typings/mysql/lib/protocol/sequences/Query.d.ts": [
-        "./node_modules/@types/node/stream.d.ts",
-        "./node_modules/mysql2/typings/mysql/lib/protocol/packets/index.d.ts",
-        "./node_modules/mysql2/typings/mysql/lib/protocol/sequences/Sequence.d.ts"
-      ],
-      "./node_modules/mysql2/typings/mysql/lib/protocol/sequences/Sequence.d.ts": [
-        "./node_modules/@types/node/events.d.ts"
-      ],
       "./node_modules/pretty-format/build/index.d.ts": [
         "./node_modules/pretty-format/build/types.d.ts"
       ],
-      "./src/MysqlArchive.ts": [
+      "./src/SQLiteArchive.ts": [
         "../clerk/dist/Clerk.d.ts",
-        "./node_modules/mysql2/promise.d.ts",
+        "./node_modules/@types/sqlite3/index.d.ts",
         "./node_modules/tslib/tslib.d.ts",
-        "./src/connection/MysqlConnectionInfo.ts",
         "./src/query/QueryParser.ts",
-        "./src/transaction/MysqlArchiveTransaction.ts"
-      ],
-      "./src/connection/MysqlConnectionInfo.ts": [
-        "./node_modules/mysql2/promise.d.ts",
-        "./node_modules/tslib/tslib.d.ts"
+        "./src/transaction/SQLiteArchiveTransaction.ts"
       ],
       "./src/index.ts": [
         "./node_modules/tslib/tslib.d.ts",
-        "./src/MysqlArchive.ts",
-        "./src/connection/MysqlConnectionInfo.ts",
+        "./src/SQLiteArchive.ts",
         "./src/procedure/entity/BatchUpdate.ts",
+        "./src/procedure/entity/CreateEntity.ts",
+        "./src/procedure/entity/CreateForeignRelation.ts",
         "./src/procedure/model/CreateProcedure.ts",
         "./src/procedure/model/DeleteProcedure.ts",
         "./src/procedure/model/UpdateProcedure.ts",
-        "./src/transaction/MysqlArchiveTransaction.ts"
+        "./src/query/QueryParser.ts",
+        "./src/transaction/SQLiteArchiveTransaction.ts"
       ],
       "./src/procedure/entity/BatchUpdate.ts": [
         "../clerk/dist/Clerk.d.ts",
-        "./node_modules/mysql2/index.d.ts",
         "./node_modules/tslib/tslib.d.ts",
-        "./src/MysqlArchive.ts",
+        "./src/SQLiteArchive.ts",
         "./src/query/FilterParser.ts"
+      ],
+      "./src/procedure/entity/CreateEntity.ts": [
+        "../clerk/dist/Clerk.d.ts",
+        "./node_modules/tslib/tslib.d.ts",
+        "./src/SQLiteArchive.ts"
+      ],
+      "./src/procedure/entity/CreateForeignRelation.ts": [
+        "../clerk/dist/Clerk.d.ts",
+        "./node_modules/tslib/tslib.d.ts"
       ],
       "./src/procedure/entity/Synchronize.ts": [
         "../clerk/dist/Clerk.d.ts",
@@ -1375,19 +1268,18 @@
       ],
       "./src/procedure/model/CreateProcedure.ts": [
         "../clerk/dist/Clerk.d.ts",
-        "./node_modules/mysql2/index.d.ts",
         "./node_modules/tslib/tslib.d.ts",
-        "./src/MysqlArchive.ts"
+        "./src/SQLiteArchive.ts"
       ],
       "./src/procedure/model/DeleteProcedure.ts": [
         "../clerk/dist/Clerk.d.ts",
         "./node_modules/tslib/tslib.d.ts",
-        "./src/MysqlArchive.ts"
+        "./src/SQLiteArchive.ts"
       ],
       "./src/procedure/model/UpdateProcedure.ts": [
         "../clerk/dist/Clerk.d.ts",
         "./node_modules/tslib/tslib.d.ts",
-        "./src/MysqlArchive.ts"
+        "./src/SQLiteArchive.ts"
       ],
       "./src/query/FilterParser.ts": [
         "../clerk/dist/Clerk.d.ts",
@@ -1407,14 +1299,13 @@
       ],
       "./src/reflect/TableReflection.ts": [
         "./node_modules/tslib/tslib.d.ts",
-        "./src/MysqlArchive.ts",
+        "./src/SQLiteArchive.ts",
         "./src/reflect/ColumnReflection.ts"
       ],
-      "./src/transaction/MysqlArchiveTransaction.ts": [
+      "./src/transaction/SQLiteArchiveTransaction.ts": [
         "../clerk/dist/Clerk.d.ts",
-        "./node_modules/mysql2/promise.d.ts",
         "./node_modules/tslib/tslib.d.ts",
-        "./src/MysqlArchive.ts"
+        "./src/SQLiteArchive.ts"
       ],
       "../clerk/dist/Clerk.d.ts": [
         "../clerk/dist/archive/Archive.d.ts",
@@ -1964,6 +1855,10 @@
       "./node_modules/@types/node/zlib.d.ts": [
         "./node_modules/@types/node/stream.d.ts"
       ],
+      "./node_modules/@types/sqlite3/index.d.ts": [
+        "./node_modules/@types/node/events.d.ts",
+        "./node_modules/@types/node/index.d.ts"
+      ],
       "./node_modules/@types/yargs/index.d.ts": [
         "./node_modules/@types/yargs-parser/index.d.ts"
       ],
@@ -1981,83 +1876,32 @@
         "./node_modules/jest-diff/build/cleanupSemantic.d.ts",
         "./node_modules/jest-diff/build/types.d.ts"
       ],
-      "./node_modules/mysql2/index.d.ts": [
-        "./node_modules/mysql2/promise.d.ts",
-        "./node_modules/mysql2/typings/mysql/index.d.ts"
-      ],
-      "./node_modules/mysql2/promise.d.ts": [
-        "./node_modules/@types/node/events.d.ts",
-        "./node_modules/mysql2/index.d.ts"
-      ],
-      "./node_modules/mysql2/typings/mysql/index.d.ts": [
-        "./node_modules/mysql2/typings/mysql/lib/Connection.d.ts",
-        "./node_modules/mysql2/typings/mysql/lib/Pool.d.ts",
-        "./node_modules/mysql2/typings/mysql/lib/PoolCluster.d.ts",
-        "./node_modules/mysql2/typings/mysql/lib/PoolConnection.d.ts",
-        "./node_modules/mysql2/typings/mysql/lib/protocol/packets/index.d.ts",
-        "./node_modules/mysql2/typings/mysql/lib/protocol/sequences/Query.d.ts"
-      ],
-      "./node_modules/mysql2/typings/mysql/lib/Connection.d.ts": [
-        "./node_modules/@types/node/events.d.ts",
-        "./node_modules/mysql2/typings/mysql/lib/protocol/packets/index.d.ts",
-        "./node_modules/mysql2/typings/mysql/lib/protocol/sequences/Query.d.ts"
-      ],
-      "./node_modules/mysql2/typings/mysql/lib/Pool.d.ts": [
-        "./node_modules/@types/node/events.d.ts",
-        "./node_modules/mysql2/typings/mysql/lib/Connection.d.ts",
-        "./node_modules/mysql2/typings/mysql/lib/PoolConnection.d.ts",
-        "./node_modules/mysql2/typings/mysql/lib/protocol/packets/index.d.ts",
-        "./node_modules/mysql2/typings/mysql/lib/protocol/sequences/Query.d.ts"
-      ],
-      "./node_modules/mysql2/typings/mysql/lib/PoolCluster.d.ts": [
-        "./node_modules/@types/node/events.d.ts",
-        "./node_modules/mysql2/typings/mysql/lib/Connection.d.ts",
-        "./node_modules/mysql2/typings/mysql/lib/PoolConnection.d.ts"
-      ],
-      "./node_modules/mysql2/typings/mysql/lib/PoolConnection.d.ts": [
-        "./node_modules/mysql2/typings/mysql/lib/Connection.d.ts"
-      ],
-      "./node_modules/mysql2/typings/mysql/lib/protocol/packets/index.d.ts": [
-        "./node_modules/mysql2/typings/mysql/lib/protocol/packets/Field.d.ts",
-        "./node_modules/mysql2/typings/mysql/lib/protocol/packets/FieldPacket.d.ts",
-        "./node_modules/mysql2/typings/mysql/lib/protocol/packets/OkPacket.d.ts",
-        "./node_modules/mysql2/typings/mysql/lib/protocol/packets/ResultSetHeader.d.ts",
-        "./node_modules/mysql2/typings/mysql/lib/protocol/packets/RowDataPacket.d.ts"
-      ],
-      "./node_modules/mysql2/typings/mysql/lib/protocol/sequences/Query.d.ts": [
-        "./node_modules/@types/node/stream.d.ts",
-        "./node_modules/mysql2/typings/mysql/lib/protocol/packets/index.d.ts",
-        "./node_modules/mysql2/typings/mysql/lib/protocol/sequences/Sequence.d.ts"
-      ],
-      "./node_modules/mysql2/typings/mysql/lib/protocol/sequences/Sequence.d.ts": [
-        "./node_modules/@types/node/events.d.ts"
-      ],
       "./node_modules/pretty-format/build/index.d.ts": [
         "./node_modules/pretty-format/build/types.d.ts"
       ],
-      "./src/MysqlArchive.ts": [
+      "./src/SQLiteArchive.ts": [
         "../clerk/dist/Clerk.d.ts",
-        "./node_modules/mysql2/promise.d.ts",
-        "./node_modules/mysql2/typings/mysql/lib/protocol/packets/FieldPacket.d.ts",
-        "./node_modules/mysql2/typings/mysql/lib/protocol/packets/OkPacket.d.ts",
-        "./node_modules/mysql2/typings/mysql/lib/protocol/packets/ResultSetHeader.d.ts",
-        "./node_modules/mysql2/typings/mysql/lib/protocol/packets/RowDataPacket.d.ts",
-        "./src/connection/MysqlConnectionInfo.ts",
-        "./src/transaction/MysqlArchiveTransaction.ts"
-      ],
-      "./src/connection/MysqlConnectionInfo.ts": [
-        "./node_modules/mysql2/promise.d.ts"
+        "./node_modules/@types/sqlite3/index.d.ts",
+        "./src/transaction/SQLiteArchiveTransaction.ts"
       ],
       "./src/index.ts": [
-        "./src/MysqlArchive.ts",
-        "./src/connection/MysqlConnectionInfo.ts",
+        "./src/SQLiteArchive.ts",
         "./src/procedure/entity/BatchUpdate.ts",
+        "./src/procedure/entity/CreateEntity.ts",
+        "./src/procedure/entity/CreateForeignRelation.ts",
         "./src/procedure/model/CreateProcedure.ts",
         "./src/procedure/model/DeleteProcedure.ts",
         "./src/procedure/model/UpdateProcedure.ts",
-        "./src/transaction/MysqlArchiveTransaction.ts"
+        "./src/query/QueryParser.ts",
+        "./src/transaction/SQLiteArchiveTransaction.ts"
       ],
       "./src/procedure/entity/BatchUpdate.ts": [
+        "../clerk/dist/Clerk.d.ts"
+      ],
+      "./src/procedure/entity/CreateEntity.ts": [
+        "../clerk/dist/Clerk.d.ts"
+      ],
+      "./src/procedure/entity/CreateForeignRelation.ts": [
         "../clerk/dist/Clerk.d.ts"
       ],
       "./src/procedure/entity/Synchronize.ts": [
@@ -2080,17 +1924,13 @@
         "./src/query/FilterParser.ts"
       ],
       "./src/reflect/TableReflection.ts": [
-        "./src/MysqlArchive.ts",
+        "./src/SQLiteArchive.ts",
         "./src/reflect/ColumnReflection.ts"
       ],
-      "./src/transaction/MysqlArchiveTransaction.ts": [
+      "./src/transaction/SQLiteArchiveTransaction.ts": [
         "../clerk/dist/Clerk.d.ts",
-        "./node_modules/mysql2/promise.d.ts",
-        "./node_modules/mysql2/typings/mysql/lib/protocol/packets/FieldPacket.d.ts",
-        "./node_modules/mysql2/typings/mysql/lib/protocol/packets/OkPacket.d.ts",
-        "./node_modules/mysql2/typings/mysql/lib/protocol/packets/ResultSetHeader.d.ts",
-        "./node_modules/mysql2/typings/mysql/lib/protocol/packets/RowDataPacket.d.ts",
-        "./src/MysqlArchive.ts"
+        "./node_modules/@types/sqlite3/index.d.ts",
+        "./src/SQLiteArchive.ts"
       ],
       "../clerk/dist/Clerk.d.ts": [
         "../clerk/dist/archive/Archive.d.ts",
@@ -2541,6 +2381,7 @@
       "./node_modules/@types/node/zlib.d.ts",
       "./node_modules/@types/normalize-package-data/index.d.ts",
       "./node_modules/@types/prettier/index.d.ts",
+      "./node_modules/@types/sqlite3/index.d.ts",
       "./node_modules/@types/stack-utils/index.d.ts",
       "./node_modules/@types/yargs-parser/index.d.ts",
       "./node_modules/@types/yargs/index.d.ts",
@@ -2549,28 +2390,14 @@
       "./node_modules/jest-diff/build/index.d.ts",
       "./node_modules/jest-diff/build/printDiffs.d.ts",
       "./node_modules/jest-diff/build/types.d.ts",
-      "./node_modules/mysql2/index.d.ts",
-      "./node_modules/mysql2/promise.d.ts",
-      "./node_modules/mysql2/typings/mysql/index.d.ts",
-      "./node_modules/mysql2/typings/mysql/lib/Connection.d.ts",
-      "./node_modules/mysql2/typings/mysql/lib/Pool.d.ts",
-      "./node_modules/mysql2/typings/mysql/lib/PoolCluster.d.ts",
-      "./node_modules/mysql2/typings/mysql/lib/PoolConnection.d.ts",
-      "./node_modules/mysql2/typings/mysql/lib/protocol/packets/Field.d.ts",
-      "./node_modules/mysql2/typings/mysql/lib/protocol/packets/FieldPacket.d.ts",
-      "./node_modules/mysql2/typings/mysql/lib/protocol/packets/OkPacket.d.ts",
-      "./node_modules/mysql2/typings/mysql/lib/protocol/packets/ResultSetHeader.d.ts",
-      "./node_modules/mysql2/typings/mysql/lib/protocol/packets/RowDataPacket.d.ts",
-      "./node_modules/mysql2/typings/mysql/lib/protocol/packets/index.d.ts",
-      "./node_modules/mysql2/typings/mysql/lib/protocol/sequences/Query.d.ts",
-      "./node_modules/mysql2/typings/mysql/lib/protocol/sequences/Sequence.d.ts",
       "./node_modules/pretty-format/build/index.d.ts",
       "./node_modules/pretty-format/build/types.d.ts",
       "./node_modules/tslib/tslib.d.ts",
-      "./src/MysqlArchive.ts",
-      "./src/connection/MysqlConnectionInfo.ts",
+      "./src/SQLiteArchive.ts",
       "./src/index.ts",
       "./src/procedure/entity/BatchUpdate.ts",
+      "./src/procedure/entity/CreateEntity.ts",
+      "./src/procedure/entity/CreateForeignRelation.ts",
       "./src/procedure/entity/Synchronize.ts",
       "./src/procedure/model/CreateProcedure.ts",
       "./src/procedure/model/DeleteProcedure.ts",
@@ -2581,7 +2408,7 @@
       "./src/reflect/ColumnReflection.ts",
       "./src/reflect/TableReflection.spec.ts",
       "./src/reflect/TableReflection.ts",
-      "./src/transaction/MysqlArchiveTransaction.ts",
+      "./src/transaction/SQLiteArchiveTransaction.ts",
       "../clerk/dist/Clerk.d.ts",
       "../clerk/dist/archive/Archive.d.ts",
       "../clerk/dist/archive/ArchiveProcedureHook.d.ts",

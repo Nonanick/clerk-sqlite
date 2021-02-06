@@ -1,13 +1,11 @@
-import { AppException, ComparableValues, MaybePromise } from 'clerk';
-import { PoolConnection } from 'mysql2/promise';
-import { MysqlArchive } from '../MysqlArchive';
+import { AppException, ComparableValues } from 'clerk';
+import { SQLiteArchive } from '../SQLiteArchive';
 
-export class MysqlArchiveTransaction {
+export class SQLiteArchiveTransaction {
 
-  protected _trxConn?: PoolConnection;
   protected _ended: boolean = false;
 
-  constructor(protected _conn: MysqlArchive) {
+  constructor(protected _conn: SQLiteArchive) {
   }
 
   protected async getConnection() {
@@ -15,12 +13,7 @@ export class MysqlArchiveTransaction {
       throw new AppException('Mysql Transaction already finished!');
     }
 
-    if (this._trxConn == null) {
-      this._trxConn = await (await this._conn.connection()).getConnection();
-      await this._trxConn.beginTransaction();
-    }
-
-    return this._trxConn;
+   return this._conn;
   }
 
 
@@ -43,23 +36,17 @@ export class MysqlArchiveTransaction {
     }
   }
 
-  async lastInsertedId(): MaybePromise<any> {
-    return await this.execute('SELECT last_inserted_id();');
-  }
-
   async commit() {
     if (this._ended) {
       throw new AppException('Mysql Transaction already finished!');
     }
     this._ended = true;
     try {
-      await this._trxConn!.commit();
+      await this._conn!.execute("COMMIT");
     } catch (err) {
-      await this._trxConn!.rollback();
+      await this._conn!.execute("ROLLBACK");
       throw err;
     } finally {
-      await this._trxConn!.release();
-      delete this._trxConn;
     }
   }
 
@@ -70,13 +57,10 @@ export class MysqlArchiveTransaction {
     this._ended = true;
 
     try {
-      await this._trxConn!.rollback();
+      await this._conn!.execute("ROLLBACK");
     } catch (err) {
       console.error('Failed to rollback mysql transaction! ', err);
-    } finally {
-      await this._trxConn!.release();
-      delete this._trxConn;
-    }
+    } 
   }
 
 }

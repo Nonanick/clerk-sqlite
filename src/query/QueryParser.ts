@@ -3,7 +3,6 @@ import { FilterParser } from './FilterParser';
 
 export class QueryParser {
 
-
   protected _parameterValues: {
     [name: string]: ComparableValues;
   } = {};

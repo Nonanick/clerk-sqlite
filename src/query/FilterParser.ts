@@ -212,12 +212,10 @@ function IFilterQuery(filter: IFilterQuery, params: FilterParams) {
 function ParseNamedAttributes(query: string, namedParams: { [name: string]: ComparableValues; }): GeneratedQuerySQL {
   let matches = query.match(/:\[.*?\]/g);
   if (matches != null) {
-    let paramCount = 1;
     let params: ComparableValues[] = [];
     for (let p of matches) {
       let paramName = p.slice(2, -1);
       query = query.replace(p, '?');
-      paramCount++;
       params.push(namedParams[paramName]);
     }
     return {

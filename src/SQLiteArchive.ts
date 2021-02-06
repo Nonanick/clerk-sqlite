@@ -1,38 +1,55 @@
-import { Archive, ComparableValues, IOrderBy, MaybePromise, QueryRequest, QueryResponse } from 'clerk';
-import { MysqlConnectionInfo } from 'connection/MysqlConnectionInfo';
-import { createPool, Pool } from 'mysql2/promise';
-import { MysqlArchiveTransaction } from 'transaction/MysqlArchiveTransaction';
-import { QueryParser } from './query/QueryParser';
+import {
+  Archive,
+  ComparableValues,
+  IOrderBy,
+  MaybePromise,
+  QueryRequest,
+  QueryResponse,
+} from "clerk";
+import { Database, RunResult, OPEN_CREATE, OPEN_READWRITE } from "sqlite3";
+import { SQLiteArchiveTransaction } from "./transaction/SQLiteArchiveTransaction";
+import { QueryParser } from "./query/QueryParser";
 
+export class SQLiteArchive extends Archive {
+  private database?: Database;
 
-export class MysqlArchive extends Archive {
-
-  protected _connectionInfo: MysqlConnectionInfo;
-
-  protected _mysqlConn?: Pool;
-
-  constructor(connectionInfo: MysqlConnectionInfo) {
+  constructor(
+    private filename: string | ":memory:",
+    private connectionMode: number = OPEN_CREATE | OPEN_READWRITE,
+  ) {
     super();
-    this._connectionInfo = connectionInfo;
+  }
+
+  isMemoryOnly() {
+    return this.filename === ":memory:";
   }
 
   async connect() {
-    this._mysqlConn = await createPool(this._connectionInfo);
-    return this._mysqlConn;
+    return new Promise<Database>((resolve, reject) => {
+      this.database = new Database(
+        this.filename,
+        this.connectionMode,
+        ((err) => {
+          if (err != null) {
+            reject(err);
+          }
+          resolve(this.database!);
+        }),
+      );
+    });
   }
 
-  async connection(): Promise<Pool> {
-
-    if (this._mysqlConn == null) {
+  async connection(): Promise<Database> {
+    if (this.database == null) {
       await this.connect();
     }
 
-    return this._mysqlConn!;
-
+    return this.database!;
   }
 
-  async query<T = any>(request: QueryRequest<T>): MaybePromise<QueryResponse<T>> {
-
+  async query<T = any>(
+    request: QueryRequest<T>,
+  ): MaybePromise<QueryResponse<T>> {
     let parser = new QueryParser(request);
 
     let sql = parser.parse();
@@ -44,48 +61,63 @@ export class MysqlArchive extends Archive {
     let response = new QueryResponse(request);
 
     try {
-      let values = await conn.query(
-        sql.query,
-        sql.params
+      let values = await new Promise<any[]>(
+        (resolve, reject) => {
+          conn.run(
+            sql.query,
+            sql.params,
+            (result: RunResult, err: any) => {
+              if (err != null) {
+                reject(err);
+              }
+              result.all((err, rows) => {
+                if (err) {
+                  reject(err);
+                }
+
+                resolve(rows);
+              });
+            },
+          );
+        },
       );
-      if (Array.isArray(values[0])) {
-        let rows: any[] = values[0];
+
+      if (Array.isArray(values)) {
+        let rows: any[] = values;
 
         if (request.hasIncludes()) {
           rows = this.arrangeIncludedProperties(request, rows);
           rows = await this.fetchChildRows(request, rows);
         }
-        response.addRows(...values[0]);
-
+        response.addRows(...values);
       }
     } catch (err) {
       response.addErrors(err);
     }
     return response;
-
   }
 
-  protected arrangeIncludedProperties(request: QueryRequest<any>, values: any[]) {
-
+  protected arrangeIncludedProperties(
+    request: QueryRequest<any>,
+    values: any[],
+  ) {
     for (let includedProp of request.includes) {
-
       let relation = request.entity.properties[includedProp]?.getRelation();
-      if (relation!.type !== 'one-to-one' && relation!.type !== 'many-to-one') {
+      if (relation!.type !== "one-to-one" && relation!.type !== "many-to-one") {
         continue;
       }
 
       let baseName = `related_to_${includedProp}_`;
-      let newValues = values.map(row => {
+      let newValues = values.map((row) => {
         let newRow = { ...row };
 
         for (let rowPropertyName in row) {
           if (rowPropertyName.indexOf(baseName) === 0) {
-
-            let newName = rowPropertyName.replace(baseName, '');
+            let newName = rowPropertyName.replace(baseName, "");
             let value = row[rowPropertyName];
             delete newRow[rowPropertyName];
 
-            if (typeof newRow[includedProp] !== 'object') {
+            if (typeof newRow[includedProp] !== "object") {
               newRow[includedProp] = {};
             }
 
@@ -102,16 +134,14 @@ export class MysqlArchive extends Archive {
   }
 
   protected async fetchChildRows(request: QueryRequest<any>, values: any[]) {
-
     for (let includedProp of request.includes) {
-
       let relation = request.entity.properties[includedProp]?.getRelation();
       if (relation == null) {
         continue;
       }
 
       // Fetch child rows applies only for many-to-one relations
-      if (relation.type !== 'many-to-one') {
+      if (relation.type !== "many-to-one") {
         continue;
       }
 
@@ -120,8 +150,8 @@ export class MysqlArchive extends Archive {
       let ordering: IOrderBy[] = [
         {
           property: relation?.property!,
-          direction: 'asc'
-        }
+          direction: "asc",
+        },
       ];
 
       if (relation.order != null) {
@@ -138,15 +168,22 @@ export class MysqlArchive extends Archive {
         order: ordering,
         filters: {
           ...relation?.filters ?? {},
-          'included-in-previous': [relation?.property!, 'included in', values.map(m => {
-            return m[includedProp];
-          })]
+          "included-in-previous": [
+            relation?.property!,
+            "included in",
+            values.map((m) => {
+              return m[includedProp];
+            }),
+          ],
         },
       });
 
       const childRows = await childRequest.fetch();
       if (childRows instanceof Error || childRows == null) {
-        console.error('Failed to fetch associated child of property ', includedProp);
+        console.error(
+          "Failed to fetch associated child of property ",
+          includedProp,
+        );
         return values;
       }
 
@@ -158,7 +195,6 @@ export class MysqlArchive extends Archive {
       for (let index = 0; index <= childRows.length; index++) {
         let child = childRows[index];
         for (let row of values) {
-
           if (child[relation.property] === row[includedProp]) {
             // Initialize array
             if (!Array.isArray(placeInRowAt[index])) placeInRowAt[index] = [];
@@ -173,24 +209,34 @@ export class MysqlArchive extends Archive {
       for (let index in placeInRowAt) {
         values[index][includedProp] = placeInRowAt[index];
       }
-
     }
 
     return values;
   }
 
-  transaction(): MysqlArchiveTransaction {
-    let trx = new MysqlArchiveTransaction(this);
+  transaction(): SQLiteArchiveTransaction {
+    let trx = new SQLiteArchiveTransaction(this);
 
     return trx;
   }
 
   async lastInsertedId(): MaybePromise<any> {
-    return await this.execute('SELECT last_inserted_id();');
+    return await this.execute("SELECT last_inserted_id();");
   }
 
   async execute(query: string, params: ComparableValues[] = []) {
-    return (await this.connection()).execute(query, params);
+    return new Promise<RunResult>(async (resolve, reject) => {
+      (await this.connection()).run(
+        query,
+        params,
+        (result: RunResult, err: any) => {
+          if (err != null) {
+            reject(err);
+          }
+          resolve(result);
+        },
+      );
+    });
   }
 }
 

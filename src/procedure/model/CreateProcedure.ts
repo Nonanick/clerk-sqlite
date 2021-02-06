@@ -1,7 +1,6 @@
 import { AppError, ComparableValues, IModelProcedure, IProcedureResponse } from 'clerk';
-import { ResultSetHeader } from 'mysql2';
 
-import { MysqlArchive } from '../../MysqlArchive';
+import { SQLiteArchive } from '../../SQLiteArchive';
 
 export const CreateProcedure: IModelProcedure<
   IProcedureResponse
@@ -9,7 +8,7 @@ export const CreateProcedure: IModelProcedure<
   name: 'create',
   execute: async (archive, request) => {
 
-    if (!(archive instanceof MysqlArchive)) {
+    if (!(archive instanceof SQLiteArchive)) {
       return new Error('Create procedure expects a MysqlArchive!');
     }
 
@@ -75,8 +74,9 @@ export const CreateProcedure: IModelProcedure<
       return {
         procedure: 'create',
         request,
+        insertedId : queryResponse.lastID,
         model: request.model,
-        success: (queryResponse[0] as ResultSetHeader).affectedRows == 1,
+        success: queryResponse.changes == 1,
         sql: insertSQL,
         bindParams: propertyValues,
       };

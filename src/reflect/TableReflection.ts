@@ -1,4 +1,4 @@
-import { MysqlArchive } from '../MysqlArchive';
+import { SQLiteArchive } from '../SQLiteArchive';
 import { ColumnReflection } from './ColumnReflection';
 
 export class TableReflection {
@@ -8,7 +8,7 @@ export class TableReflection {
   };
 
   constructor(
-    protected archive: MysqlArchive,
+    protected archive: SQLiteArchive,
     public name: string
   ) {
 

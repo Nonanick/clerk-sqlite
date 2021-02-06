@@ -1,5 +1,5 @@
 import { IModelProcedure, IProcedureResponse } from 'clerk';
-import { MysqlArchive } from "../../MysqlArchive";
+import { SQLiteArchive } from "../../SQLiteArchive";
 
 export const DeleteProcedure: IModelProcedure<
   IProcedureResponse
@@ -7,7 +7,7 @@ export const DeleteProcedure: IModelProcedure<
   name: 'delete',
   execute: async (archive, request) => {
 
-    if (!(archive instanceof MysqlArchive)) {
+    if (!(archive instanceof SQLiteArchive)) {
       return new Error('Create procedure expects an MysqlArchive!');
     }
 

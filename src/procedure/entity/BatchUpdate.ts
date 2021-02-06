@@ -6,15 +6,14 @@ import {
   IEntityProcedureContext,
   IEntityProcedureResponse
 } from 'clerk';
-import { ResultSetHeader } from 'mysql2';
-import { MysqlArchive } from '../../MysqlArchive';
+import { SQLiteArchive } from '../../SQLiteArchive';
 import { FilterParser } from '../../query/FilterParser';
 
 export const BatchUpdate: IEntityProcedure = {
   name: 'batch-update',
   execute: async (archive, request) => {
 
-    if (!(archive instanceof MysqlArchive)) {
+    if (!(archive instanceof SQLiteArchive)) {
       return new Error('Batch Update expects an MySQL archive!');
     }
 
@@ -39,12 +38,10 @@ export const BatchUpdate: IEntityProcedure = {
 
     let batchUpdateResponse = await archive.execute(updateSQL, bindParams);
 
-    let result: ResultSetHeader = batchUpdateResponse[0] as ResultSetHeader;
-
     let response: IEntityProcedureResponse = {
       procedure: 'batch-update',
       request: request,
-      success: result.affectedRows > 0,
+      success: batchUpdateResponse.changes > 0,
       bindedParams: bindParams,
       sql: updateSQL,
     };
@@ -59,8 +56,3 @@ export interface BatchUpdateContext extends IEntityProcedureContext {
   filter: IFilterQuery;
 };
 
-declare module 'clerk' {
-  interface Entity {
-    execute(procedure: 'batch-update', context: BatchUpdateContext): MaybePromise<IEntityProcedureResponse>;
-  }
-}
