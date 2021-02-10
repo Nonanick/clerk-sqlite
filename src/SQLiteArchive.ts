@@ -6,7 +6,7 @@ import {
   QueryRequest,
   QueryResponse,
 } from "clerk";
-import { Database, RunResult, OPEN_CREATE, OPEN_READWRITE } from "sqlite3";
+import { Database, OPEN_CREATE, OPEN_READWRITE, RunResult } from "sqlite3";
 import { SQLiteArchiveTransaction } from "./transaction/SQLiteArchiveTransaction";
 import { QueryParser } from "./query/QueryParser";
 
@@ -66,11 +66,12 @@ export class SQLiteArchive extends Archive {
           conn.run(
             sql.query,
             sql.params,
-            (result: RunResult, err: any) => {
+            function (err: Error) {
               if (err != null) {
                 reject(err);
               }
-              result.all((err, rows) => {
+              console.log("[SQLiteArchive] Result is", this);
+              this.all((err, rows) => {
                 if (err) {
                   reject(err);
                 }
